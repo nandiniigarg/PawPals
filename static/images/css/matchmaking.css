@@ -1,0 +1,402 @@
+{
+    background: linear-gradient(-45deg, #FFFFFF, #DCE3F9, #859DEA, #6F57DB, #0A5571);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+
+
+{
+box-sizing: border-box;
+}
+
+body {
+font-family: "Dosis", sans-serif;
+background: #c5cae9;
+text-align: center;
+}
+
+.clear {
+clear: both;
+}
+
+/*** CARD STLES ***/
+.cards-container {
+width: 793px;
+max-width: 100%;
+margin: 2rem auto;
+}
+
+.card {
+float: left;
+margin: 3rem;
+}
+
+.card-one {
+position: relative;
+width: 300px;
+background: #fff;
+box-shadow: 0 10px 7px -5px rgba(0, 0, 0, 0.4);
+}
+.card-one header {
+position: relative;
+width: 100%;
+height: 60px;
+background-color: #c8c;
+}
+.card-one header::before, .card-one header::after {
+content: "";
+position: absolute;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+background: inherit;
+}
+.card-one header::before {
+transform: skewY(-8deg);
+transform-origin: 100% 100%;
+}
+.card-one header::after {
+transform: skewY(8deg);
+transform-origin: 0 100%;
+}
+.card-one header .avatar {
+position: absolute;
+left: 50%;
+top: 30px;
+margin-left: -50px;
+z-index: 5;
+width: 100px;
+height: 100px;
+border-radius: 50%;
+overflow: hidden;
+background: #ccc;
+border: 3px solid #fff;
+}
+.card-one header .avatar img {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+width: 100px;
+height: auto;
+}
+.card-one h3 {
+position: relative;
+margin: 80px 0 30px;
+text-align: center;
+}
+.card-one h3::after {
+content: "";
+position: absolute;
+bottom: -15px;
+left: 50%;
+margin-left: -15px;
+width: 30px;
+height: 1px;
+background: #000;
+}
+.card-one .desc {
+padding: 0 1rem 2rem;
+text-align: center;
+line-height: 1.5;
+color: #777;
+}
+.card-one .contacts {
+width: 200px;
+max-width: 100%;
+margin: 0 auto 3rem;
+}
+.card-one .contacts a {
+display: block;
+width: 33.333333%;
+float: left;
+text-align: center;
+color: #c8c;
+}
+.card-one .contacts a:hover {
+color: #333;
+}
+.card-one .contacts a:hover .fa::before {
+color: #fff;
+}
+.card-one .contacts a:hover .fa::after {
+width: 100%;
+height: 100%;
+}
+.card-one .contacts a .fa {
+position: relative;
+width: 40px;
+height: 40px;
+line-height: 39px;
+overflow: hidden;
+text-align: center;
+font-size: 1.3em;
+}
+.card-one .contacts a .fa:before {
+position: relative;
+z-index: 1;
+}
+.card-one .contacts a .fa::after {
+content: "";
+position: absolute;
+top: 50%;
+left: 50%;
+width: 0;
+height: 0;
+transform: translate(-50%, -50%);
+background: #c8c;
+transition: width 0.3s, height 0.3s;
+}
+.card-one .contacts a:last-of-type .fa {
+line-height: 36px;
+}
+.card-one footer {
+position: relative;
+padding: 1rem;
+background-color: #EFADFF;
+text-align: center;
+}
+.card-one footer a {
+padding: 0 1rem;
+color: #e2e2e2;
+transition: color 0.4s;
+}
+.card-one footer a:hover {
+color: #c8c;
+}
+.card-one footer::before {
+content: "";
+position: absolute;
+top: -27px;
+left: 50%;
+margin-left: -15px;
+border: 15px solid transparent;
+border-bottom-color: #6573d0;
+}
+
+.card-two {
+position: relative;
+width: 300px;
+background: #fff;
+box-shadow: 0 10px 7px -5px rgba(0, 0, 0, 0.4);
+}
+.card-two header {
+position: relative;
+width: 100%;
+height: 100px;
+background-color: #c8c;
+}
+.card-two header::after {
+content: "";
+position: absolute;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+background: inherit;
+transform: skewY(8deg);
+transform-origin: 0 100%;
+}
+.card-two header .avatar {
+position: absolute;
+left: 50%;
+top: 30px;
+margin-left: -50px;
+z-index: 5;
+width: 100px;
+height: 100px;
+border-radius: 50%;
+overflow: hidden;
+background: #ccc;
+border: 3px solid #fff;
+}
+.card-two header .avatar img {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+width: 100px;
+height: auto;
+}
+.card-two h3 {
+position: relative;
+margin: 80px 0 30px;
+text-align: center;
+}
+.card-two h3::after {
+content: "";
+position: absolute;
+bottom: -15px;
+left: 50%;
+margin-left: -15px;
+width: 30px;
+height: 1px;
+background: #000;
+}
+.card-two .desc {
+padding: 0 1rem 2rem;
+text-align: center;
+line-height: 1.5;
+color: #777;
+}
+.card-two .contacts {
+width: 200px;
+max-width: 100%;
+margin: 0 auto 3.5rem;
+}
+.card-two .contacts a {
+display: block;
+width: 33.333333%;
+float: left;
+text-align: center;
+color: #c8c;
+}
+.card-two .contacts a:hover {
+color: #333;
+}
+.card-two .contacts a:hover .fa::before {
+color: #fff;
+}
+.card-two .contacts a:hover .fa::after {
+top: 0;
+}
+.card-two .contacts a .fa {
+position: relative;
+width: 40px;
+height: 40px;
+line-height: 39px;
+overflow: hidden;
+text-align: center;
+border: 2px solid #c8c;
+border-radius: 50%;
+}
+.card-two .contacts a .fa:before {
+position: relative;
+z-index: 1;
+}
+.card-two .contacts a .fa::after {
+content: "";
+position: absolute;
+top: -50px;
+left: 0;
+width: 100%;
+height: 100%;
+transition: top 0.3s;
+background: #c8c;
+}
+.card-two .contacts a:last-of-type .fa {
+line-height: 36px;
+.card-one footer {
+  position: relative;
+  padding: 1rem;
+  background-color: #EFADFF;
+  text-align: center;
+}
+.card-one footer a {
+  padding: 0 1rem;
+  color: #e2e2e2;
+  transition: color 0.4s;
+}
+.card-one footer a:hover {
+  color: #c8c;
+}
+.card-one footer::before {
+  content: "";
+  position: absolute;
+  top: -27px;
+  left: 50%;
+  margin-left: -15px;
+  border: 15px solid transparent;
+  border-bottom-color: #6573d0;
+}
+
+
+
+
+
+
+
+
+
+.connect-button {
+appearance: button;
+background-color: #000;
+background-image: none;
+border: 1px solid #000;
+border-radius: 4px;
+box-shadow: #fff 4px 4px 0 0,#000 4px 4px 0 1px;
+box-sizing: border-box;
+color: #fff;
+cursor: pointer;
+display: inline-block;
+font-family: ITCAvantGardeStd-Bk,Arial,sans-serif;
+font-size: 14px;
+font-weight: 400;
+line-height: 20px;
+margin: 0 5px 10px 0;
+overflow: visible;
+padding: 12px 40px;
+text-align: center;
+text-transform: none;
+touch-action: manipulation;
+user-select: none;
+-webkit-user-select: none;
+vertical-align: middle;
+white-space: nowrap;
+}
+
+.connect-button:focus {
+text-decoration: none;
+}
+
+.connect-button:hover {
+text-decoration: none;
+}
+
+.connect-button:active {
+box-shadow: rgba(0, 0, 0, .125) 0 3px 5px inset;
+outline: 0;
+}
+
+.connect-button:not([disabled]):active {
+box-shadow: #fff 2px 2px 0 0, #000 2px 2px 0 1px;
+transform: translate(2px, 2px);
+}
+
+
+@media (min-width: 768px) {
+.connect-button {
+  padding: 12px 50px;
+}
+}
+
+
+
+
+
+
+
+
+/*** RESPONSIVE ***/
+@media only screen and (max-width: 810px) {
+.card {
+  float: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+}
