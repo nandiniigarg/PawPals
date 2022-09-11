@@ -22,4 +22,6 @@ import home
 
 urlpatterns = [
     path('', views.index, name='index'),
+    # path('profile', views.login, name='login'),
+    path('login', views.loginpage, name='loginpage')
 ]
