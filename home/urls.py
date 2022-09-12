@@ -8,5 +8,6 @@ from ..pawpals import views
 urlpattern = [
     path('', include(pawpals.urls)),
     path("admin/", admin.site.urls),
+    
 
 ]   
